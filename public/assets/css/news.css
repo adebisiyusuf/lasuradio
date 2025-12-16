@@ -1,0 +1,69 @@
+.news-page {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* ✅ FILTER BAR */
+.news-filter {
+    position: relative !important;
+    z-index: 2;
+    background: white;
+    padding: .8rem;
+    border-radius: .5rem;
+    box-shadow: 0 6px 14px rgba(0,0,0,.05);
+}
+
+.news-filter select {
+    width: 100%;
+    padding: .6rem;
+    font-size: .9rem;
+    border: 1px solid #d1d5db;
+    border-radius: .4rem;
+    background: white;
+    position: relative !important;
+    transform: none !important;
+    z-index: 2;
+}
+
+/* ✅ NEWS GRID */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.2rem;
+}
+
+.news-card {
+    background: white;
+    border-radius: .75rem;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.05);
+}
+
+.news-card img {
+    height: 160px;
+    object-fit: cover;
+}
+
+.news-card-content {
+    padding: .8rem;
+}
+
+.news-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .3rem;
+}
+
+.news-card-meta {
+    font-size: .75rem;
+    color: #6b7280;
+}
+
+/* ✅ HARD KILL FLOATING */
+.news-page *,
+.news-filter *,
+.news-filter select {
+    position: relative !important;
+    transform: none !important;
+}

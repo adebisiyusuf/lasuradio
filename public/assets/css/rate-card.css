@@ -1,0 +1,43 @@
+/* rate-card.css - customize as needed */
+.rate-card-page {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: .75rem;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 10px 24px rgba(0,0,0,.06);
+}
+
+.rate-card-page h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.rate-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rate-table th,
+.rate-table td {
+    padding: .9rem;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+.rate-table th {
+    background: #020617;
+    color: white;
+}
+
+.rate-table tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+.rate-note {
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: .9rem;
+    color: #374151;
+}

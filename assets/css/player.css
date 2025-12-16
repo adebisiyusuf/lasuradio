@@ -1,0 +1,32 @@
+/* player.css - customize as needed */
+.player-page {
+    background: #020617;
+    color: #e5e7eb;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,.4);
+}
+
+.player-page h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.player-container audio {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#mutesToggle,
+#muteToggle {
+    background: #22c55e;
+    border: none;
+    border-radius: 999px;
+    padding: .6rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+

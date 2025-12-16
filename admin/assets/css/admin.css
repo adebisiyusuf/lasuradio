@@ -1,0 +1,81 @@
+body {
+    font-family: system-ui;
+    background: #3066d1;
+    margin: 0;
+}
+
+.admin-header {
+    background: #020617;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-header nav a {
+    color: #cbd5f5;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.admin-main {
+    padding: 1.5rem;
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.admin-card {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,.05);
+}
+
+.admin-form {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select,
+.admin-form button {
+    width: 100%;
+    margin-bottom: .6rem;
+    padding: .5rem;
+}
+
+.admin-table {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+    padding: .6rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-auth-card {
+    max-width: 350px;
+    margin: 100px auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.danger {
+    color: red;
+}

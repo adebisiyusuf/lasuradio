@@ -1,0 +1,237 @@
+/* ================================
+   GLOBAL RESET & BASE
+================================ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+    padding: 0;
+    margin: 0;
+}
+
+.site-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    transform: none !important;
+    padding: 1.5rem;
+}
+
+/* ================================
+   LINKS & MEDIA
+================================ */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ================================
+   SITE LAYOUT
+================================ */
+
+
+/* ================================
+   HEADER & NAV
+================================ */
+.site-header {
+    background: #020617;
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #22c55e;
+}
+
+/* ================================
+   NAVIGATION – STABLE DROPDOWN
+================================ */
+.main-nav {
+    background: #020617;
+    position: relative;
+    z-index: 10;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0;
+}
+
+.main-nav li {
+    position: relative;   /* ✅ anchors submenu */
+}
+
+.main-nav > ul > li > a {
+    display: block;
+    padding: .9rem 1rem;
+    color: #cbd5f5;
+    white-space: nowrap;
+}
+
+.main-nav > ul > li > a:hover {
+    background: #1e293b;
+    color: #ffffff;
+}
+
+/* ✅ SUBMENU (NO FLOATING) */
+.main-nav li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #020617;
+    min-width: 180px;
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.main-nav li ul li a {
+    padding: .8rem 1rem;
+    display: block;
+    color: #cbd5f5;
+}
+
+.main-nav li ul li a:hover {
+    background: #1e293b;
+    color: #ffffff;
+}
+
+/* ✅ SHOW ON HOVER */
+.main-nav li:hover > ul {
+    display: flex;
+}
+
+/* ✅ MOBILE SAFE */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav li ul {
+        position: static;
+        display: none;
+    }
+
+    .main-nav li:hover > ul {
+        display: block;
+    }
+}
+
+
+.btn-listen-live {
+    background: #22c55e;
+    color: #020617;
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+/* ================================
+   GLOBAL FORM FIX (DROPDOWN BUG)
+================================ */
+select,
+input,
+textarea {
+    font-family: inherit;
+    position: relative !important;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    z-index: 1 !important;
+}
+
+/* ✅ KILL ALL TRANSFORM BUG SOURCES */
+.hero,
+.homepage,
+.container,
+.wrapper,
+.section,
+.site-main,
+.news-page {
+    transform: none !important;
+    position: relative !important;
+}
+
+/* ================================
+   FOOTER
+================================ */
+.site-footer {
+    margin-top: 2rem;
+    background: #020617;
+    color: #cbd5f5;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* ================================
+   UTILITY
+================================ */
+.text-center {
+    text-align: center;
+}
+
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+
+/* ================================
+   MOBILE
+================================ */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+}
+
+select {
+    position: relative !important;
+    transform: none !important;
+    z-index: 1 !important;
+}
+
+/* ✅ FINAL KILL SWITCH FOR FLOATING NAV BUG */
+.main-nav *,
+.site-header *,
+nav * {
+    position: relative !important;
+    transform: none !important;
+}

@@ -1,0 +1,18 @@
+.article-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: .75rem;
+    box-shadow: 0 8px 18px rgba(15,23,42,.06);
+}
+.article-image {
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: .75rem;
+}
+.article-meta {
+    font-size: .8rem;
+    color: #6b7280;
+}
+.article-content {
+    line-height: 1.7;
+}

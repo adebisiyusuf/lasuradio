@@ -1,0 +1,41 @@
+/* player.css - customize as needed */
+.player-page {
+    max-width: 500px;
+    margin: 3rem auto;
+    background: #020617;
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+
+.player-page h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.player-container audio {
+    width: 100%;
+}
+
+.player-meta {
+    font-size: .8rem;
+    color: #cbd5f5;
+}
+
+.player-controls button {
+    background: #22c55e;
+    color: #020617;
+    border: none;
+    padding: .6rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+}
